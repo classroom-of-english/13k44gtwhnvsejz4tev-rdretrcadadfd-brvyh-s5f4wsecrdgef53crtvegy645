@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>小型浏览器</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 800px;
+      height: 600px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>小型浏览器</h1>
+  <iframe src="" id="iframe" width="100%" height="100%"></iframe>
+  <script src="script.js"></script>
+</body>
+</html>
+script.js
+
+var iframe = document.getElementById('iframe');
+
+function loadPage(url) {
+  iframe.src = url;
+}
+
+loadPage('https://eaglercraft.com');
